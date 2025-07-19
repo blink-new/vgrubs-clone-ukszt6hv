@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Button } from './components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card'
 import { Badge } from './components/ui/badge'
+import { PricingCalculator } from './components/PricingCalculator'
 import { 
   Smartphone, 
   TrendingUp, 
@@ -37,6 +38,7 @@ function App() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <a href="#features" className="text-gray-600 hover:text-primary transition-colors">Features</a>
                 <a href="#pricing" className="text-gray-600 hover:text-primary transition-colors">Pricing</a>
+                <a href="#calculator" className="text-gray-600 hover:text-primary transition-colors">Calculator</a>
                 <a href="#about" className="text-gray-600 hover:text-primary transition-colors">About</a>
                 <Button variant="outline" className="mr-2">Login</Button>
                 <Button>Get Started</Button>
@@ -61,6 +63,7 @@ function App() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <a href="#features" className="block px-3 py-2 text-gray-600 hover:text-primary">Features</a>
               <a href="#pricing" className="block px-3 py-2 text-gray-600 hover:text-primary">Pricing</a>
+              <a href="#calculator" className="block px-3 py-2 text-gray-600 hover:text-primary">Calculator</a>
               <a href="#about" className="block px-3 py-2 text-gray-600 hover:text-primary">About</a>
               <div className="px-3 py-2 space-y-2">
                 <Button variant="outline" className="w-full">Login</Button>
@@ -351,6 +354,9 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Pricing Calculator */}
+      <PricingCalculator />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
